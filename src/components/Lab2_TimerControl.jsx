@@ -6,10 +6,11 @@ export default function Lab2TimerControl() {
   const [running, setRunning] = useState(false);
 
   useEffect(() => {
+
+  }, [running]);
     // TODO 1: running이 false면 타이머를 만들지 않기
     // TODO 2: running이 true면 setInterval로 1초마다 count 증가
     // TODO 3: Cleanup에서 clearInterval 호출
-  }, [running]);
 
   const reset = () => {
     // TODO 4: 타이머를 멈추고 count를 0으로 초기화
@@ -17,6 +18,7 @@ export default function Lab2TimerControl() {
 
   return (
     <div>
+      <h2>Count: {count}</h2>
       <p className="status">상태: {running ? 'Running' : 'Stopped'}</p>
       <div className="count">{count}</div>
       <div className="controls">
