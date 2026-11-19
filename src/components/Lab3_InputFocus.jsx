@@ -5,10 +5,13 @@ export default function Lab3InputFocus() {
   // TODO 1: input DOM을 참조할 inputRef 생성 (초기값 null)
 
   const focusInput = () => {
+    inputRef.current.focus();
     // TODO 2: ref.current를 이용해 input에 focus() 호출
   };
 
   const clearInput = () => {
+    inputRef.current.value = "";
+    inputRef.current.focus();
     // TODO 3: input의 값을 지우고 다시 Focus
   };
 
@@ -20,6 +23,7 @@ export default function Lab3InputFocus() {
         /* TODO 4: ref={inputRef} 속성 연결 */ />
       <div className="controls">
         <button onClick={focusInput}>Focus</button>
+        <button onClick={clearInput}>Clear</button>
         <button className="secondary" onClick={clearInput}>Clear</button>
       </div>
     </div>
