@@ -80,7 +80,7 @@ body {
 }
 .pill {
   background: #eaf0ff;
-  color: #2850ac;
+  color: #ac2828;
   border-radius: 99px;
   padding: 6px 10px;
   font-size: 12px;
@@ -103,7 +103,7 @@ body {
   border: 0;
   border-radius: 9px;
   padding: 11px 19px;
-  background: #285bc7;
+  background: #f64d27;
   color: white;
   font-size: 14px;
   font-weight: 650;
@@ -133,12 +133,12 @@ body {
 }
 .status {
   font-weight: 700;
-  color: #3354a1;
+  color: #a13733;
 }
 footer {
   margin-top: 20px;
   font-size: 12px;
-  color: #6c7990;
+  color: #90716c;
 }
 @media (max-width: 650px) {
   .tabs {
