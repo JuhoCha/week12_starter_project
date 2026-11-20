@@ -18,11 +18,12 @@ export default function Lab2TimerControl() {
 
   const reset = () => {
     // TODO 4: 타이머를 멈추고 count를 0으로 초기화
+    setRunning(false);
+    setCount(0);
   };
 
   return (
     <div>
-      <h2>Count: {count}</h2>
       <p className="status">상태: {running ? 'Running' : 'Stopped'}</p>
       <div className="count">{count}</div>
       <div className="controls">

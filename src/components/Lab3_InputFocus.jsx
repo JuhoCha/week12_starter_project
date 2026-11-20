@@ -24,7 +24,6 @@ export default function Lab3InputFocus() {
       <div className="controls">
         <button onClick={focusInput}>Focus</button>
         <button onClick={clearInput}>Clear</button>
-        <button className="secondary" onClick={clearInput}>Clear</button>
       </div>
     </div>
   );

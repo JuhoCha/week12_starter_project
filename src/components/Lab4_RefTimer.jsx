@@ -11,8 +11,8 @@ export default function Lab4RefTimer() {
     if (timerRef.current != null) return;
     timerRef.current = setInterval(() => {
       setCount(prevCount => prevCount + 1);
-      setRunning(true);
     }, 1000);
+    setRunning(true);
     // TODO 2: timerRef.current에 타이머가 있으면 중복 시작 방지
     // TODO 3: setInterval의 반환 ID를 timerRef.current에 보관
     // TODO 4: 1초마다 count 증가, running을 true로 변경
@@ -21,6 +21,7 @@ export default function Lab4RefTimer() {
   const stop = () => {
     clearInterval(timerRef.current);
     timerRef.current = null;
+    setRunning(false);
     // TODO 5: clearInterval로 타이머 중지
     // TODO 6: timerRef.current를 null로, running은 false로 변경
   };
