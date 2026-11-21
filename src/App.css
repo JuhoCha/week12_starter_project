@@ -140,6 +140,14 @@ footer {
   font-size: 12px;
   color: #90716c;
 }
+.status.on{
+  background: #dcfce7;
+  color: #15803d;
+}
+.status.off{
+  background: #e5e7eb;
+  color: #4b5563;
+}
 @media (max-width: 650px) {
   .tabs {
     grid-template-columns: repeat(2, 1fr);
