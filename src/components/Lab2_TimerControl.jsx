@@ -24,7 +24,7 @@ export default function Lab2TimerControl() {
 
   return (
     <div>
-      <p className="status">상태: {running ? 'status.on' : 'status.off'}
+      <p className={running ? 'status on' : 'status off'}>
         {running ? 'Running' : 'Stopped'}
       </p>
       <div className="count">{count}</div>
